@@ -1,7 +1,7 @@
 # alpine-plus-plus
 A lightweight docker image for shell scripting
 
-[![build](https://github.com/cicirello/alpine-plus-plus/workflows/build/badge.svg)]()
+[![build](https://github.com/cicirello/alpine-plus-plus/workflows/build/badge.svg)](https://github.com/cicirello/alpine-plus-plus/actions)
 
 ## Summary
 This docker project is motivated by Github-actions 
