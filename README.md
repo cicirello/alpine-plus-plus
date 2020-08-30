@@ -2,6 +2,7 @@
 A lightweight docker image for shell scripting
 
 [![build](https://github.com/cicirello/alpine-plus-plus/workflows/build/badge.svg)](https://github.com/cicirello/alpine-plus-plus/actions)
+[![GitHub](https://img.shields.io/github/license/cicirello/alpine-plus-plus)]()
 
 ## Summary
 This docker project is motivated by Github-actions 
