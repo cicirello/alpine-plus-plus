@@ -22,5 +22,5 @@ coreutils, and gawk on top of Alpine Linux.
 
 ## License
 The source code, including the Dockerfile and anything
-else within the Github repository is licensed under the
+else within the Github repository, is licensed under the
 [MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
