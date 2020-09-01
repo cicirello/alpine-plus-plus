@@ -14,13 +14,22 @@ relatively small.
 
 Alpine Linux is used as the base image. Alone, Alpine
 almost suits this purpose. However, it lacks the bash
-shell, and commonly used Gnu tools such as findutils,
+shell, and commonly used GNU tools such as findutils,
 gawk, etc. It also lacks git.
 
 The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
 
 ## License
+### Source Code License
 The source code, including the Dockerfile and anything
-else within the Github repository, is licensed under the
+else within the Github repository for alpine-plus-plus, is licensed under the
 [MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
+
+### Image Licenses
+As with all Docker images, the image itself (once built, or obtained from
+Docker Hub or Github Packages) contains software that is covered by a
+variety of licenses. Since the base image is Alpine, this would include
+the [licenses of the components of Alpine](https://pkgs.alpinelinux.org/);
+and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/licenses.en.html)
+and the [license for git](https://git-scm.com/).
