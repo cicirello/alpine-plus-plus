@@ -5,7 +5,7 @@ A lightweight docker image for shell scripting
 [![GitHub](https://img.shields.io/github/license/cicirello/alpine-plus-plus)](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE)
 
 ## Summary
-This docker project is motivated by Github-actions 
+This docker image is motivated by Github-actions 
 implemented primarily with bash and shell utilities,
 but is also potentially applicable to any use-case
 where you primarily need bash and Gnu tools
@@ -19,3 +19,8 @@ gawk, etc. It also lacks git.
 
 The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
+
+## License
+The source code, including the Dockerfile and anything
+else within the Github repository is licensed under the
+[MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
