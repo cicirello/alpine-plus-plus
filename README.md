@@ -1,9 +1,9 @@
 # alpine-plus-plus
 A lightweight docker image for shell scripting
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/cicirello/alpine-plus-plus/latest?logo=docker)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cicirello/alpine-plus-plus?logo=docker)
-![Docker Pulls](https://img.shields.io/docker/pulls/cicirello/alpine-plus-plus?logo=docker)
+[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/cicirello/alpine-plus-plus/latest?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cicirello/alpine-plus-plus?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/cicirello/alpine-plus-plus?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/alpine-plus-plus?logo=github)
 [![build](https://github.com/cicirello/alpine-plus-plus/workflows/build/badge.svg)](https://github.com/cicirello/alpine-plus-plus/actions)
 [![GitHub](https://img.shields.io/github/license/cicirello/alpine-plus-plus)](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE)
