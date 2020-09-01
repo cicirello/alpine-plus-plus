@@ -1,0 +1,30 @@
+name: Docker Publish
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Get the release version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: cicirello/alpine-plus-plus
+          tags: ${{ steps.get_version.outputs.VERSION }},latest
+          tag_with_ref: true
+          tag_with_sha: true
+      
