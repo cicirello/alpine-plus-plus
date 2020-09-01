@@ -28,7 +28,7 @@ else within the Github repository for alpine-plus-plus, is licensed under the
 
 ### Image Licenses
 As with all Docker images, the image itself (once built, or obtained from
-Docker Hub or Github Packages) contains software that is covered by a
+Docker Hub) contains software that is covered by a
 variety of licenses. Since the base image is Alpine, this would include
 the [licenses of the components of Alpine](https://pkgs.alpinelinux.org/);
 and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/licenses.en.html)
