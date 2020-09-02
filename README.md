@@ -24,6 +24,51 @@ gawk, etc. It also lacks git.
 The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
 
+
+## Docker Tags and Versioning Scheme
+
+alpine-plus-plus uses [Semantic Versioning](https://semver.org/) with 
+version numbers of the form: MAJOR.MINOR.PATCH, where differences in 
+MAJOR correspond to incompatible changes, differences in MINOR 
+correspond to introduction of backwards compatible new functionality, 
+and PATCH corresponds to backwards compatible bug fixes.
+
+Each pre-built image pushed to Docker Hub is tagged in multiple
+ways:
+* The tag latest indicates, well, the latest image.
+* Tags of the form MAJOR.MINOR.PATCH (such as 1.0.0) is the SemVer of the image.
+* Each image is also tagged with a v prepended to the SemVer (e.g., v1.0.0).
+* Each image is also tagged with its git short SHA.  
+
+
+## Installation and Usage
+
+The pre-built image is hosted on Docker Hub.  You can use it 
+in the following ways.
+
+### Docker Pull Command
+The Docker pull command for the image is:
+
+```
+docker pull cicirello/alpine-plus-plus
+```
+
+### Reference within a Dockerfile
+You can begin your Dockerfile as follows:
+
+```Dockerfile
+FROM cicirello/alpine-plus-plus:latest
+
+# The rest of your Dockerfile would go here.
+```
+
+You can replace `latest` in the above with 
+a specific version number if you prefer.
+A specific example can be found in the [Dockerfile
+of the generate-sitemap Github 
+action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
+
+
 ## License
 ### Source Code License
 The source code, including the Dockerfile and anything
@@ -31,9 +76,22 @@ else within the Github repository for alpine-plus-plus, is licensed under the
 [MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
 
 ### Image Licenses
-As with all Docker images, the image itself (once built, or obtained from
+As with all pre-built Docker images, the image itself (once built, or obtained from
 Docker Hub) contains software that is covered by a
 variety of licenses. Since the base image is Alpine, this would include
 the [licenses of the components of Alpine](https://pkgs.alpinelinux.org/);
-and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/licenses.en.html)
-and the [license for git](https://git-scm.com/).
+and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/gpl-3.0.en.html)
+and the [license for git](https://git-scm.com/).  
+
+If you build and distribute an image containing your software, 
+using alpine-plus-plus as the base image, it
+is your responsibility to follow the licenses of all of the
+software contained within the image.  At the time that this documentation
+is written, one of the effects of the combination of those licenses is
+a constraint on the licensing of such a pre-built image containing 
+your software to the GPL 3.0 or later (derived from the inclusion of bash 
+and the other GNU tools).  If you desire a more permissive license
+for your software, one approach would be to instead distribute a
+Dockerfile, rather than a pre-built image, which should circumvent the
+issue since you would no longer be distributing a derivative of 
+GPL licensed software.
