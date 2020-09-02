@@ -31,9 +31,22 @@ else within the Github repository for alpine-plus-plus, is licensed under the
 [MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
 
 ### Image Licenses
-As with all Docker images, the image itself (once built, or obtained from
+As with all pre-built Docker images, the image itself (once built, or obtained from
 Docker Hub) contains software that is covered by a
 variety of licenses. Since the base image is Alpine, this would include
 the [licenses of the components of Alpine](https://pkgs.alpinelinux.org/);
-and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/licenses.en.html)
-and the [license for git](https://git-scm.com/).
+and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/gpl-3.0.en.html)
+and the [license for git](https://git-scm.com/).  
+
+If you build and distribute an image containing your software, 
+using alpine-plus-plus as the base image, it
+is your responsibility to follow the licenses of all of the
+software contained within the image.  At the time that this documentation
+is written, one of the effects of the combination of those licenses is
+a constraint on the licensing of such a pre-built image containing 
+your software to the GPL 3.0 or later (derived from the inclusion of bash 
+and the other GNU tools).  If you desire a more permissive license
+for your software, one approach would be to instead distribute a
+Dockerfile, rather than a pre-built image, which should circumvent the
+issue since you would no longer be distributing a derivative of 
+GPL licensed software.
