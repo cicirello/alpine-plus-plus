@@ -24,6 +24,31 @@ gawk, etc. It also lacks git.
 The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
 
+## Installation and Usage
+
+The pre-built image is hosted on Docker Hub.  You can use it 
+in the following ways.
+
+### Docker Pull Command
+The Docker pull command for the image is:
+
+```
+docker pull cicirello/alpine-plus-plus
+```
+
+### Reference within a Dockerfile
+You can begin your Dockerfile as follows:
+
+```docker
+FROM cicirello/alpine-plus-plus:latest
+
+# The rest of your Dockerfile would go here.
+```
+
+You can replace `latest` in the above with 
+a specific version number if you prefer.
+
+
 ## License
 ### Source Code License
 The source code, including the Dockerfile and anything
