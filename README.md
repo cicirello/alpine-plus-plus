@@ -24,6 +24,16 @@ gawk, etc. It also lacks git.
 The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
 
+
+## Versioning Scheme
+
+alpine-plus-plus uses [Semantic Versioning](https://semver.org/) with 
+version numbers of the form: MAJOR.MINOR.PATCH, where differences in 
+MAJOR correspond to incompatible changes, differences in MINOR 
+correspond to introduction of backwards compatible new functionality, 
+and PATCH corresponds to backwards compatible bug fixes. 
+
+
 ## Installation and Usage
 
 The pre-built image is hosted on Docker Hub.  You can use it 
