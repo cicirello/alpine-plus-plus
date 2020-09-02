@@ -25,13 +25,20 @@ The alpine-plus-plus image adds git, bash, findutils,
 coreutils, and gawk on top of Alpine Linux.
 
 
-## Versioning Scheme
+## Docker Tags and Versioning Scheme
 
 alpine-plus-plus uses [Semantic Versioning](https://semver.org/) with 
 version numbers of the form: MAJOR.MINOR.PATCH, where differences in 
 MAJOR correspond to incompatible changes, differences in MINOR 
 correspond to introduction of backwards compatible new functionality, 
-and PATCH corresponds to backwards compatible bug fixes. 
+and PATCH corresponds to backwards compatible bug fixes.
+
+Each pre-built image pushed to Docker Hub is tagged in multiple
+ways:
+* The tag latest indicates, well, the latest image.
+* Tags of the form MAJOR.MINOR.PATCH (such as 1.0.0) is the SemVer of the image.
+* Each image is also tagged with a v prepended to the SemVer (e.g., v1.0.0).
+* Each image is also tagged with its git short SHA.  
 
 
 ## Installation and Usage
