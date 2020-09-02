@@ -47,6 +47,9 @@ FROM cicirello/alpine-plus-plus:latest
 
 You can replace `latest` in the above with 
 a specific version number if you prefer.
+A specific example can be found in the [Dockerfile
+of the generate-sitemap Github 
+action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 
 
 ## License
