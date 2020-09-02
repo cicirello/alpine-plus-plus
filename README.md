@@ -39,7 +39,7 @@ docker pull cicirello/alpine-plus-plus
 ### Reference within a Dockerfile
 You can begin your Dockerfile as follows:
 
-```docker
+```Dockerfile
 FROM cicirello/alpine-plus-plus:latest
 
 # The rest of your Dockerfile would go here.
