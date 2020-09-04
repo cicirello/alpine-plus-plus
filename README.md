@@ -23,6 +23,12 @@ also lacks git. The alpine-plus-plus image adds
 git, bash, findutils, coreutils, and gawk on top 
 of Alpine Linux.
 
+
+## Source Repository and Builds
+
+The [source repository](https://github.com/cicirello/alpine-plus-plus) is maintained on GitHub.  At the present time, the images are also built on Github and pushed to [Docker Hub](https://hub.docker.com/r/cicirello/alpine-plus-plus) using Github Actions.
+
+
 ## Docker Tags and Versioning Scheme
 
 alpine-plus-plus uses [Semantic Versioning](https://semver.org/) with 
