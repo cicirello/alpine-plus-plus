@@ -41,8 +41,7 @@ Each pre-built image pushed to Docker Hub is tagged in multiple
 ways:
 * The tag latest indicates, well, the latest image.
 * Tags of the form MAJOR.MINOR.PATCH (such as 1.0.0) indicate the SemVer of the image.
-* Each image is also tagged with a v prepended to the SemVer (e.g., v1.0.0).
-* Each image is also tagged with its git short SHA.  
+* Each image is also tagged with a v prepended to the SemVer (e.g., v1.0.0). 
 
 
 ## Installation and Usage

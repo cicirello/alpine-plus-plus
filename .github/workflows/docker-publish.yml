@@ -26,6 +26,5 @@ jobs:
           repository: cicirello/alpine-plus-plus
           tags: ${{ steps.get_version.outputs.VERSION }},latest
           tag_with_ref: true
-          tag_with_sha: true
           labels: org.opencontainers.image.version=${{ steps.get_version.outputs.VERSION }}
       
