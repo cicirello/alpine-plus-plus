@@ -1,5 +1,5 @@
 # alpine-plus-plus
-A lightweight docker image for shell scripting and git
+A lightweight docker image for shell scripting and git (Alpine plus bash, coreutils, findutils, gawk, git)
 
 [![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/cicirello/alpine-plus-plus/latest?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cicirello/alpine-plus-plus?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
@@ -9,21 +9,19 @@ A lightweight docker image for shell scripting and git
 [![GitHub](https://img.shields.io/github/license/cicirello/alpine-plus-plus)](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE)
 
 ## Summary
-This docker image is motivated by Github-actions 
-implemented primarily with bash and shell utilities,
-but is also potentially applicable to any use-case
-where you primarily need bash and GNU tools
-like gawk, etc, but also want to keep the image size
-relatively small.
-
-Alpine Linux is used as the base image. Alone, Alpine
-almost suits this purpose. However, it lacks the bash
-shell, and commonly used GNU tools such as findutils,
-gawk, etc. It also lacks git.
-
-The alpine-plus-plus image adds git, bash, findutils,
-coreutils, and gawk on top of Alpine Linux.
-
+The alpine-plus-plus Docker image is motivated by 
+Github-actions implemented primarily with bash 
+and shell utilities, but is also potentially 
+applicable to any use-case where you primarily 
+need bash and GNU tools like gawk, etc, as well 
+as git, but also want to keep the image size 
+relatively small. Alpine Linux is used as the base 
+image. Alone, Alpine almost suits this purpose. 
+However, it lacks the bash shell, and commonly 
+used GNU tools such as findutils, gawk, etc. It 
+also lacks git. The alpine-plus-plus image adds 
+git, bash, findutils, coreutils, and gawk on top 
+of Alpine Linux.
 
 ## Docker Tags and Versioning Scheme
 
@@ -64,7 +62,7 @@ FROM cicirello/alpine-plus-plus:latest
 
 You can replace `latest` in the above with 
 a specific version number if you prefer.
-A specific example can be found in the [Dockerfile
+A specific example usage can be found in the [Dockerfile
 of the generate-sitemap Github 
 action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 
@@ -72,7 +70,7 @@ action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 ## License
 ### Source Code License
 The source code, including the Dockerfile and anything
-else within the Github repository for alpine-plus-plus, is licensed under the
+else within the [Github repository for alpine-plus-plus](https://github.com/cicirello/alpine-plus-plus), is licensed under the
 [MIT License](https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE).
 
 ### Image Licenses
@@ -92,6 +90,7 @@ a constraint on the licensing of such a pre-built image containing
 your software to the GPL 3.0 or later (derived from the inclusion of bash 
 and the other GNU tools).  If you desire a more permissive license
 for your software, one approach would be to instead distribute a
-Dockerfile, rather than a pre-built image, which should circumvent the
+Dockerfile that builds the image containing your software, 
+rather than a pre-built image of your software, which should circumvent the
 issue since you would no longer be distributing a derivative of 
 GPL licensed software.
