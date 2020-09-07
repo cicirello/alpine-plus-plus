@@ -23,6 +23,16 @@ also lacks git. The alpine-plus-plus image adds
 git, bash, findutils, coreutils, and gawk on top 
 of Alpine Linux.
 
+## Multiplatform Image
+
+alpine-plus-plus supports the following platforms:
+* linux/386
+* linux/amd64
+* linux/arm/v6
+* linux/arm/v7
+* linux/arm64
+* linux/ppc64le
+* linux/s390x
 
 ## Source Repository and Builds
 
