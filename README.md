@@ -1,7 +1,7 @@
 # alpine-plus-plus
 A lightweight docker image for shell scripting and git (Alpine plus bash, coreutils, findutils, gawk, git)
 
-[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/cicirello/alpine-plus-plus/latest?label=Docker%20Hub&logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/cicirello/alpine-plus-plus?label=Docker%20Hub&logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cicirello/alpine-plus-plus?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
 [![Docker Pulls](https://img.shields.io/docker/pulls/cicirello/alpine-plus-plus?logo=docker)](https://hub.docker.com/r/cicirello/alpine-plus-plus)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/alpine-plus-plus?logo=github)](https://github.com/cicirello/alpine-plus-plus/releases)
