@@ -26,7 +26,7 @@ of Alpine Linux.
 
 ## Source Repository and Builds
 
-The [source repository](https://github.com/cicirello/alpine-plus-plus) is maintained on GitHub.  At the present time, the images are also built on Github and pushed to [Docker Hub](https://hub.docker.com/r/cicirello/alpine-plus-plus) using Github Actions.
+The [source repository](https://github.com/cicirello/alpine-plus-plus) is maintained on GitHub.  The images are built on Github and pushed to [Docker Hub](https://hub.docker.com/r/cicirello/alpine-plus-plus), as well as the Github Container Registry using Github Actions.
 
 
 ## Docker Tags and Versioning Scheme
@@ -37,8 +37,7 @@ MAJOR correspond to incompatible changes, differences in MINOR
 correspond to introduction of backwards compatible new functionality, 
 and PATCH corresponds to backwards compatible bug fixes.
 
-Each pre-built image pushed to Docker Hub is tagged in multiple
-ways:
+Each image pushed to Docker Hub and the Github Container Registry is tagged as follows:
 * The tag latest indicates, well, the latest image.
 * Tags of the form MAJOR.MINOR.PATCH (such as 1.0.0) indicate the SemVer of the image.
 
@@ -49,14 +48,23 @@ The pre-built image is hosted on Docker Hub.  You can use it
 in the following ways.
 
 ### Docker Pull Command
-The Docker pull command for the image is:
+
+Pull from Docker Hub via the command line with the following:
 
 ```
 docker pull cicirello/alpine-plus-plus
 ```
 
-### Reference within a Dockerfile
-You can begin your Dockerfile as follows:
+Pull from the Github Container Registry with:
+
+```
+docker pull ghcr.io/cicirello/alpine-plus-plus
+```
+
+
+### Use as a base image in a Dockerfile
+
+Use as a base image in a Dockerfile:
 
 ```Dockerfile
 FROM cicirello/alpine-plus-plus:latest
@@ -70,6 +78,14 @@ A specific example usage can be found in the [Dockerfile
 of the generate-sitemap Github 
 action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 
+Or you can use as a base image (via the Github Container Registry) with:
+
+```Dockerfile
+FROM ghcr.io/cicirello/alpine-plus-plus:latest
+
+# The rest of your Dockerfile would go here.
+```
+
 
 ## License
 ### Source Code License
@@ -79,7 +95,7 @@ else within the [Github repository for alpine-plus-plus](https://github.com/cici
 
 ### Image Licenses
 As with all pre-built Docker images, the image itself (once built, or obtained from
-Docker Hub) contains software that is covered by a
+Docker Hub or the Github Container Registry) contains software that is covered by a
 variety of licenses. Since the base image is Alpine, this would include
 the [licenses of the components of Alpine](https://pkgs.alpinelinux.org/);
 and also includes the [licenses of the GNU tools added to the image](https://www.gnu.org/licenses/gpl-3.0.en.html)
