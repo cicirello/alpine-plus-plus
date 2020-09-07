@@ -44,8 +44,8 @@ Each image pushed to Docker Hub and the Github Container Registry is tagged as f
 
 ## Installation and Usage
 
-The pre-built image is hosted on Docker Hub.  You can use it 
-in the following ways.
+The pre-built image is hosted on both Docker Hub and the Github Container Registry.  
+You can use it in the following ways.
 
 ### Docker Pull Command
 
