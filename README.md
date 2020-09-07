@@ -25,7 +25,7 @@ of Alpine Linux.
 
 ## Multiplatform Image
 
-alpine-plus-plus supports the following platforms:
+alpine-plus-plus has the following platforms available:
 * linux/386
 * linux/amd64
 * linux/arm/v6
