@@ -26,7 +26,7 @@ of Alpine Linux.
 
 ## Source Repository and Builds
 
-The [source repository](https://github.com/cicirello/alpine-plus-plus) is maintained on GitHub.  The images are built on Github and pushed to [Docker Hub](https://hub.docker.com/r/cicirello/alpine-plus-plus), as well as the Github Container Registry using Github Actions.
+The [source repository](https://github.com/cicirello/alpine-plus-plus) is maintained on GitHub.  The images are built on Github and pushed to [Docker Hub](https://hub.docker.com/r/cicirello/alpine-plus-plus), as well as the [Github Container Registry](https://github.com/cicirello?ecosystem=container&tab=packages) using Github Actions.
 
 
 ## Docker Tags and Versioning Scheme
