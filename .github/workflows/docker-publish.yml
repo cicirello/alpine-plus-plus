@@ -48,6 +48,7 @@ jobs:
           labels: org.opencontainers.image.version=${{ steps.prep.outputs.version }}
 
   gihub-container-registry:
+    needs: docker
     runs-on: ubuntu-latest
 
     steps:
