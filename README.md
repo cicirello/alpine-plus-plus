@@ -58,34 +58,30 @@ The pre-built image is hosted on both Docker Hub and the Github Container Regist
 
 ### Docker Pull Command
 
-Pull from Docker Hub via the command line with the following:
+Pull the latest image from Docker Hub with the following (replace `latest` with 
+a specific version number if you prefer):
 
 ```
-docker pull cicirello/alpine-plus-plus
+docker pull cicirello/alpine-plus-plus:latest
 ```
 
 Pull from the Github Container Registry with:
 
 ```
-docker pull ghcr.io/cicirello/alpine-plus-plus
+docker pull ghcr.io/cicirello/alpine-plus-plus:latest
 ```
 
 
 ### Use as a base image in a Dockerfile
 
-Use as a base image in a Dockerfile:
+Use as a base image in a Dockerfile (replace `latest` with 
+a specific version number if you prefer):
 
 ```Dockerfile
 FROM cicirello/alpine-plus-plus:latest
 
 # The rest of your Dockerfile would go here.
 ```
-
-You can replace `latest` in the above with 
-a specific version number if you prefer.
-A specific example usage can be found in the [Dockerfile
-of the generate-sitemap Github 
-action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 
 Or you can use as a base image (via the Github Container Registry) with:
 
@@ -94,6 +90,10 @@ FROM ghcr.io/cicirello/alpine-plus-plus:latest
 
 # The rest of your Dockerfile would go here.
 ```
+
+A specific example usage can be found in the [Dockerfile
+of the generate-sitemap Github 
+action](https://github.com/cicirello/generate-sitemap/blob/master/Dockerfile).
 
 
 ## License
