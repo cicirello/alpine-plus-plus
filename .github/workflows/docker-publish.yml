@@ -3,7 +3,6 @@ name: Docker Publish
 on:
   release:
     types: [created]
-  workflow_dispatch:
 
 jobs:
   build-push:
@@ -18,7 +17,7 @@ jobs:
         run: |
           DOCKERHUB_IMAGE=cicirello/alpine-plus-plus
           GHCR_IMAGE=ghcr.io/${{ github.repository_owner }}/alpine-plus-plus
-          VERSION=3.13.5   ## ${GITHUB_REF#refs/tags/v}
+          VERSION=${GITHUB_REF#refs/tags/v}
           TAGS="${DOCKERHUB_IMAGE}:${VERSION},${DOCKERHUB_IMAGE}:latest"
           TAGS="${TAGS},${GHCR_IMAGE}:${VERSION},${GHCR_IMAGE}:latest"
           echo ::set-output name=tags::${TAGS}
