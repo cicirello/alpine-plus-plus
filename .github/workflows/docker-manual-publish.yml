@@ -16,7 +16,7 @@ jobs:
         run: |
           DOCKERHUB_IMAGE=cicirello/alpine-plus-plus
           GHCR_IMAGE=ghcr.io/${{ github.repository_owner }}/alpine-plus-plus
-          LATESTTAG=$(git describe --abbrev=0 --tags)
+          LATESTTAG=$(git describe --tags `git rev-list --tags --max-count=1`)
           VERSION=${LATESTTAG#v}
           MINOR=${VERSION%.*}
           MAJOR=${VERSION%%.*}
