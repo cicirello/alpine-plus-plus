@@ -24,7 +24,7 @@ jobs:
           MAJOR=${VERSION%%.*}
           TAGS="${DOCKERHUB_IMAGE}:${MAJOR},${DOCKERHUB_IMAGE}:${MINOR}"
           TAGS="${TAGS},${DOCKERHUB_IMAGE}:${VERSION},${DOCKERHUB_IMAGE}:latest"
-          TAGS="${TAGS},${GHCR_IMAGE}:${MAJOR},${GHCR_IMAGE}:${MINOR}
+          TAGS="${TAGS},${GHCR_IMAGE}:${MAJOR},${GHCR_IMAGE}:${MINOR}"
           TAGS="${TAGS},${GHCR_IMAGE}:${VERSION},${GHCR_IMAGE}:latest"
           echo ::set-output name=tags::${TAGS}
           echo ::set-output name=version::${VERSION}
