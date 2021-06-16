@@ -61,5 +61,5 @@ jobs:
           push: true
           tags: ${{ steps.prep.outputs.tags }}
           labels: org.opencontainers.image.version=${{ steps.prep.outputs.version }}
-          # Fails on linux/ppc64le beginning with Alpine 3.14.0
+# Fails on linux/ppc64le beginning with Alpine 3.14.0
 
