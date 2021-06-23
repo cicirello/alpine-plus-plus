@@ -9,10 +9,9 @@ LABEL maintainer="development@cicirello.org" \
     org.opencontainers.image.authors="Vincent A Cicirello, development@cicirello.org, https://www.cicirello.org/" \
     org.opencontainers.image.source="https://github.com/cicirello/alpine-plus-plus" \
     org.opencontainers.image.title="alpine-plus-plus" 
-RUN apk update && apk add \
+RUN apk --no-cache add \
     bash \
     coreutils \
     findutils \
     gawk \
-    git \
-    && rm -rf /var/cache/apk/*
+    git
