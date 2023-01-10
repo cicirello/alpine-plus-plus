@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Vincent A. Cicirello
+# Copyright (c) 2020-2023 Vincent A. Cicirello
 # https://www.cicirello.org
 # Source repository: https://github.com/cicirello/alpine-plus-plus
 # Source licensed under the MIT License: https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE
