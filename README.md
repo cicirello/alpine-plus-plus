@@ -1,6 +1,6 @@
 # alpine-plus-plus
 
-[![alpine-plus-plus - A lightweight Docker container for shell scripting with git and GNU tools (Alpine plus bash, coreutils, findutils, gawk, git)](https://actions.cicirello.org/images/alpine-plus-plus640.png)](#alpine-plus-plus)
+[![alpine-plus-plus - A lightweight Docker container for shell scripting with git and GNU tools on Alpine Linux)](https://actions.cicirello.org/images/alpine-plus-plus640.png)](#alpine-plus-plus)
 
 Website for our GitHub Actions and tools for developing them: https://actions.cicirello.org/
 
