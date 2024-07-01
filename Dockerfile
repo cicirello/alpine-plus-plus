@@ -2,7 +2,7 @@
 # https://www.cicirello.org
 # Source repository: https://github.com/cicirello/alpine-plus-plus
 # Source licensed under the MIT License: https://github.com/cicirello/alpine-plus-plus/blob/master/LICENSE
-FROM alpine:3.19.1
+FROM alpine:3
 LABEL maintainer="development@cicirello.org" \
     org.opencontainers.image.description="A lightweight docker image for shell scripting and git, \
     consisting of Alpine Linux with the addition of bash, coreutils, findutils, gawk, and git." \
